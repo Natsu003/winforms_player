@@ -31,3 +31,5 @@ TestResults/
 # Other
 *.vsidx
 *.cache
+
+packages/
