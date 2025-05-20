@@ -50,7 +50,7 @@ namespace Player2
             Color textColor = Color.Black;
             if (isActiveTrack)
             {
-                e.Graphics.FillRectangle(Brushes.LightBlue, e.Bounds); // синя полоска
+                e.Graphics.FillRectangle(Brushes.LightBlue, e.Bounds);
                 textColor = Color.Navy;
             }
 

@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\",
+  "WorkspaceRootPath": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0EC8957C-63EB-4FE3-BCE6-A062CF4AC986}|Player2.Tests\\Player2.Tests.csproj|C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\player2.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0EC8957C-63EB-4FE3-BCE6-A062CF4AC986}|Player2.Tests\\Player2.Tests.csproj|c:\\users\\koval\\onedrive\\pulpit\\\u043F\u043B\u0435\u0454\u0440\\player2_\\player2.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0EC8957C-63EB-4FE3-BCE6-A062CF4AC986}|Player2.Tests\\Player2.Tests.csproj|solutionrelative:player2.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8122EE7B-1A53-490A-A646-72DFF8D5020D}|Player2\\Player2.csproj|c:\\users\\koval\\onedrive\\pulpit\\\u043F\u043B\u0435\u0454\u0440\\player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\player2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8122EE7B-1A53-490A-A646-72DFF8D5020D}|Player2\\Player2.csproj|C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\player2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8122EE7B-1A53-490A-A646-72DFF8D5020D}|Player2\\Player2.csproj|solutionrelative:player2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8122EE7B-1A53-490A-A646-72DFF8D5020D}|Player2\\Player2.csproj|C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\player2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8122EE7B-1A53-490A-A646-72DFF8D5020D}|Player2\\Player2.csproj|C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\player2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8122EE7B-1A53-490A-A646-72DFF8D5020D}|Player2\\Player2.csproj|solutionrelative:player2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8122EE7B-1A53-490A-A646-72DFF8D5020D}|Player2\\Player2.csproj|C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\player2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8122EE7B-1A53-490A-A646-72DFF8D5020D}|Player2\\Player2.csproj|C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\player2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8122EE7B-1A53-490A-A646-72DFF8D5020D}|Player2\\Player2.csproj|solutionrelative:player2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -42,23 +42,22 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\Player2\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\Player2\\Form1.cs",
               "RelativeDocumentMoniker": "Player2\\Form1.cs",
               "ToolTip": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\Player2\\Form1.cs [Design]",
-              "RelativeToolTip": "Player2\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\Player2\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:10:57.187Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-16T13:10:57.187Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\Player2.Tests\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\Player2.Tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "Player2.Tests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\Player2.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\Player2.Tests\\UnitTest1.cs",
               "RelativeToolTip": "Player2.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAgwGgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAgwGcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T18:42:35.401Z",
               "EditorCaption": ""
@@ -67,27 +66,25 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\Player2\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\Player2\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Player2\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\Player2\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\Player2\\Form1.Designer.cs",
               "RelativeToolTip": "Player2\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T02:30:00.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T02:30:00.21Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\Player2\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\Player2\\Form1.cs",
               "RelativeDocumentMoniker": "Player2\\Form1.cs",
-              "ToolTip": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2 \u2013 \u043A\u043E\u043F\u0456\u044F\\Player2\\Form1.cs",
+              "ToolTip": "C:\\Users\\koval\\OneDrive\\Pulpit\\\u041F\u043B\u0435\u0454\u0440\\Player2_\\Player2\\Form1.cs",
               "RelativeToolTip": "Player2\\Form1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T02:02:16.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T02:02:16.871Z"
             }
           ]
         }

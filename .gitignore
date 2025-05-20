@@ -1,0 +1,33 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Test results
+TestResults/
+
+# NCrunch
+.ncrunch*
+*.ncrunch*
+
+# Rider
+.idea/
+*.sln.iml
+
+# Other
+*.vsidx
+*.cache
