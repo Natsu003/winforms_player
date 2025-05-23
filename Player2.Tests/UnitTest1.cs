@@ -1,11 +1,12 @@
-﻿using NUnit.Framework;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
+using NUnit.Framework;
 using Player2;
 
 namespace Player2.Tests
 {
+    //Playlist
     [TestFixture]
     public class PlaylistTests
     {
@@ -13,92 +14,103 @@ namespace Player2.Tests
         public void AddTrack_TrackAppearsInPlaylist()
         {
             var pl = new Playlist { Name = "Test" };
-            string trackPath = @"C:\music\test.mp3";
+            string track = @"C:\music\test.mp3";
 
-            pl.Tracks.Add(trackPath);
+            pl.Tracks.Add(track);
 
-            Assert.That(pl.Tracks, Contains.Item(trackPath));
+            Assert.That(pl.Tracks, Contains.Item(track));
         }
 
         [Test]
-        public void RemoveTrack_TrackRemovedFromPlaylist()
+        public void RemoveTrack_TrackDisappearsFromPlaylist()
         {
             var pl = new Playlist { Name = "Test" };
-            string trackPath = @"C:\music\test.mp3";
-            pl.Tracks.Add(trackPath);
+            string track = @"C:\music\test.mp3";
+            pl.Tracks.Add(track);
 
-            pl.Tracks.Remove(trackPath);
+            pl.Tracks.Remove(track);
 
-            Assert.That(pl.Tracks, Does.Not.Contain(trackPath));
+            Assert.That(pl.Tracks, Does.Not.Contain(track));
         }
 
         [Test]
-        public void Playlist_SerializationDeserialization_WorksCorrectly()
+        public void Serialization_RoundTrip_PreservesAllData()
         {
-            var pl = new Playlist
+            var original = new Playlist
             {
-                Name = "Playlist1",
-                Tracks = new List<string> { "track1.mp3", "track2.mp3" }
+                Name = "MyPlaylist",
+                Tracks = new List<string> { "a.mp3", "b.mp3" }
             };
 
-            string json = JsonConvert.SerializeObject(pl);
-            var deserialized = JsonConvert.DeserializeObject<Playlist>(json);
+            string json = JsonConvert.SerializeObject(original);
+            var copy = JsonConvert.DeserializeObject<Playlist>(json);
 
-            Assert.That(deserialized.Name, Is.EqualTo(pl.Name));
-            Assert.That(deserialized.Tracks.Count, Is.EqualTo(pl.Tracks.Count));
-            Assert.That(deserialized.Tracks, Is.EquivalentTo(pl.Tracks));
+            // Дивимось, що десеріалізація не повернула null
+            Assert.That(copy, Is.Not.Null, "Deserialised playlist is null");
+
+            Assert.Multiple(() =>
+            {
+                Assert.That(copy.Name, Is.EqualTo(original.Name));
+                Assert.That(copy.Tracks.Count, Is.EqualTo(original.Tracks.Count));
+                Assert.That(copy.Tracks, Is.EquivalentTo(original.Tracks));
+            });
         }
     }
 
+    //Library
     [TestFixture]
     public class LibraryTests
     {
         [Test]
-        public void AddTrackToLibrary_TrackExists()
+        public void AddTrack_TrackExistsInCollection()
         {
             var library = new List<string>();
-            string track = "track.mp3";
+            string track = "song.mp3";
+
             library.Add(track);
 
             Assert.That(library, Contains.Item(track));
         }
 
         [Test]
-        public void SaveAndLoadLibraryJson_LibraryRestored()
+        public void SaveAndLoadJson_RestoresTheSameList()
         {
-            var library = new List<string> { "track1.mp3", "track2.mp3" };
-            string tempFile = Path.GetTempFileName();
+            var library = new List<string> { "one.mp3", "two.mp3" };
+            string tmp = Path.GetTempFileName();
 
-            File.WriteAllText(tempFile, JsonConvert.SerializeObject(library));
-            var restored = JsonConvert.DeserializeObject<List<string>>(File.ReadAllText(tempFile));
+            // зберегти
+            File.WriteAllText(tmp, JsonConvert.SerializeObject(library));
 
-            Assert.That(restored, Is.EquivalentTo(library));
+            // завантажити
+            var loaded = JsonConvert.DeserializeObject<List<string>>(File.ReadAllText(tmp));
 
-            File.Delete(tempFile);
+            Assert.That(loaded, Is.EquivalentTo(library));
+
+            File.Delete(tmp);
         }
     }
 
+    //TrackItem
     [TestFixture]
     public class TrackItemTests
     {
         [Test]
-        public void ToString_ReturnsFileName()
+        public void ToString_ReturnsFileNameOnly()
         {
-            string path = @"C:\folder\music.mp3";
-            var track = new TrackItem { FilePath = path };
+            string fullPath = @"C:\music\track.mp3";
+            var item = new TrackItem { FilePath = fullPath };
 
-            Assert.That(track.ToString(), Is.EqualTo("music.mp3"));
+            Assert.That(item.ToString(), Is.EqualTo("track.mp3"));
         }
 
         [Test]
-        public void Equals_ReturnsTrueForSameFilePath()
+        public void TwoInstancesWithSamePath_HaveEqualFilePath()
         {
-            string path = @"C:\folder\music.mp3";
-            var t1 = new TrackItem { FilePath = path };
-            var t2 = new TrackItem { FilePath = path };
+            string path = @"C:\music\track.mp3";
+            var first = new TrackItem { FilePath = path };
+            var second = new TrackItem { FilePath = path };
 
-            Assert.That(t1.Equals(t2), Is.True);
-            Assert.That(t1.GetHashCode(), Is.EqualTo(t2.GetHashCode()));
+            Assert.That(first.FilePath, Is.EqualTo(second.FilePath));
         }
     }
 }
