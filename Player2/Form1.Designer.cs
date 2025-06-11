@@ -73,8 +73,9 @@ namespace Player2
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
-
+            // 
             // buttonPlayPause
+            // 
             this.buttonPlayPause.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonPlayPause.BackColor = System.Drawing.Color.Green;
             this.buttonPlayPause.FlatAppearance.BorderSize = 0;
@@ -86,10 +87,12 @@ namespace Player2
             this.buttonPlayPause.Size = new System.Drawing.Size(75, 75);
             this.buttonPlayPause.TabIndex = 2;
             this.buttonPlayPause.Text = "▶️";
+            this.toolTip1.SetToolTip(this.buttonPlayPause, "Призупинення\\Поновлення відтворення");
             this.buttonPlayPause.UseVisualStyleBackColor = false;
             this.buttonPlayPause.Click += new System.EventHandler(this.buttonPlayPause_Click_1);
-
+            // 
             // buttonNext
+            // 
             this.buttonNext.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonNext.BackColor = System.Drawing.Color.Blue;
             this.buttonNext.FlatAppearance.BorderSize = 0;
@@ -101,10 +104,12 @@ namespace Player2
             this.buttonNext.Size = new System.Drawing.Size(50, 50);
             this.buttonNext.TabIndex = 3;
             this.buttonNext.Text = ">";
+            this.toolTip1.SetToolTip(this.buttonNext, "Наступний трек");
             this.buttonNext.UseVisualStyleBackColor = false;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click_1);
-
+            // 
             // buttonPrevious
+            // 
             this.buttonPrevious.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonPrevious.BackColor = System.Drawing.Color.Blue;
             this.buttonPrevious.FlatAppearance.BorderSize = 0;
@@ -116,19 +121,22 @@ namespace Player2
             this.buttonPrevious.Size = new System.Drawing.Size(50, 50);
             this.buttonPrevious.TabIndex = 4;
             this.buttonPrevious.Text = "<";
+            this.toolTip1.SetToolTip(this.buttonPrevious, "Попередній трек");
             this.buttonPrevious.UseVisualStyleBackColor = false;
             this.buttonPrevious.Click += new System.EventHandler(this.buttonPrevious_Click_1);
-
+            // 
             // labelTime
+            // 
             this.labelTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelTime.Location = new System.Drawing.Point(10, 57);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(70, 16);
             this.labelTime.TabIndex = 1;
             this.labelTime.Text = "00:00:00";
-
+            // 
             // labelSongInfo
-            this.labelSongInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            // 
+            this.labelSongInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSongInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.labelSongInfo.Location = new System.Drawing.Point(172, 288);
@@ -137,8 +145,9 @@ namespace Player2
             this.labelSongInfo.TabIndex = 15;
             this.labelSongInfo.Text = "Назва пісні - Виконавець";
             this.labelSongInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
+            // 
             // panelControls
+            // 
             this.panelControls.BackColor = System.Drawing.Color.LightGray;
             this.panelControls.Controls.Add(this.trackBarProgress);
             this.panelControls.Controls.Add(this.buttonRepeat);
@@ -153,8 +162,9 @@ namespace Player2
             this.panelControls.Name = "panelControls";
             this.panelControls.Size = new System.Drawing.Size(982, 137);
             this.panelControls.TabIndex = 1;
-
+            // 
             // trackBarProgress
+            // 
             this.trackBarProgress.BackColor = System.Drawing.Color.LightGray;
             this.trackBarProgress.Dock = System.Windows.Forms.DockStyle.Top;
             this.trackBarProgress.Location = new System.Drawing.Point(0, 0);
@@ -164,8 +174,9 @@ namespace Player2
             this.trackBarProgress.TabIndex = 18;
             this.trackBarProgress.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.trackBarProgress.Scroll += new System.EventHandler(this.trackBarProgress_Scroll);
-
+            // 
             // buttonRepeat
+            // 
             this.buttonRepeat.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonRepeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.buttonRepeat.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -175,10 +186,12 @@ namespace Player2
             this.buttonRepeat.Size = new System.Drawing.Size(30, 30);
             this.buttonRepeat.TabIndex = 17;
             this.buttonRepeat.Text = "🔁";
+            this.toolTip1.SetToolTip(this.buttonRepeat, "Зациклити трек");
             this.buttonRepeat.UseVisualStyleBackColor = true;
             this.buttonRepeat.Click += new System.EventHandler(this.buttonRepeat_Click);
-
+            // 
             // buttonShuffle
+            // 
             this.buttonShuffle.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonShuffle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.buttonShuffle.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -187,10 +200,12 @@ namespace Player2
             this.buttonShuffle.Size = new System.Drawing.Size(30, 30);
             this.buttonShuffle.TabIndex = 16;
             this.buttonShuffle.Text = "🔀";
+            this.toolTip1.SetToolTip(this.buttonShuffle, "Перемішати треки");
             this.buttonShuffle.UseVisualStyleBackColor = true;
             this.buttonShuffle.Click += new System.EventHandler(this.buttonShuffle_Click);
-
+            // 
             // trackBarVolume
+            // 
             this.trackBarVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBarVolume.Location = new System.Drawing.Point(789, 70);
             this.trackBarVolume.Maximum = 100;
@@ -198,10 +213,12 @@ namespace Player2
             this.trackBarVolume.Size = new System.Drawing.Size(154, 56);
             this.trackBarVolume.TabIndex = 15;
             this.trackBarVolume.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.toolTip1.SetToolTip(this.trackBarVolume, "Керування гучністю");
             this.trackBarVolume.Value = 80;
             this.trackBarVolume.Scroll += new System.EventHandler(this.trackBarVolume_Scroll);
-
+            // 
             // pictureBoxMusic
+            // 
             this.pictureBoxMusic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxMusic.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxMusic.Name = "pictureBoxMusic";
@@ -210,9 +227,10 @@ namespace Player2
             this.pictureBoxMusic.TabIndex = 10;
             this.pictureBoxMusic.TabStop = false;
             this.pictureBoxMusic.Visible = false;
-
+            // 
             // labelPlaylistName
-            this.labelPlaylistName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            // 
+            this.labelPlaylistName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPlaylistName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.labelPlaylistName.Location = new System.Drawing.Point(-17, -11);
@@ -221,8 +239,9 @@ namespace Player2
             this.labelPlaylistName.TabIndex = 11;
             this.labelPlaylistName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelPlaylistName.Visible = false;
-
+            // 
             // panelPlaylist
+            // 
             this.panelPlaylist.Controls.Add(this.flpPlaylists);
             this.panelPlaylist.Controls.Add(this.buttonEllipsis);
             this.panelPlaylist.Controls.Add(this.listBoxPlaylistTracks);
@@ -233,18 +252,20 @@ namespace Player2
             this.panelPlaylist.Name = "panelPlaylist";
             this.panelPlaylist.Size = new System.Drawing.Size(614, 285);
             this.panelPlaylist.TabIndex = 11;
-            this.panelPlaylist.Visible = true;
-
+            // 
             // flpPlaylists
-            this.flpPlaylists.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            // 
+            this.flpPlaylists.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpPlaylists.AutoSize = true;
             this.flpPlaylists.Location = new System.Drawing.Point(0, 0);
             this.flpPlaylists.Name = "flpPlaylists";
             this.flpPlaylists.Size = new System.Drawing.Size(580, 85);
             this.flpPlaylists.TabIndex = 6;
-
+            this.toolTip1.SetToolTip(this.flpPlaylists, "Плейлисти");
+            // 
             // buttonEllipsis
+            // 
             this.buttonEllipsis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonEllipsis.AutoSize = true;
             this.buttonEllipsis.ContextMenuStrip = this.cmsPlaylistMenu;
@@ -254,10 +275,12 @@ namespace Player2
             this.buttonEllipsis.Size = new System.Drawing.Size(30, 30);
             this.buttonEllipsis.TabIndex = 1;
             this.buttonEllipsis.Text = "⋮";
+            this.toolTip1.SetToolTip(this.buttonEllipsis, "Меню");
             this.buttonEllipsis.UseVisualStyleBackColor = true;
             this.buttonEllipsis.Click += new System.EventHandler(this.buttonEllipsis_Click_1);
-
+            // 
             // cmsPlaylistMenu
+            // 
             this.cmsPlaylistMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsPlaylistMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiAddTracks,
@@ -268,31 +291,41 @@ namespace Player2
             this.cmsPlaylistMenu.Name = "cmsPlaylistMenu";
             this.cmsPlaylistMenu.Size = new System.Drawing.Size(258, 124);
             this.cmsPlaylistMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsPlaylistMenu_ItemClicked_1);
-
+            // 
             // tsmiAddTracks
+            // 
             this.tsmiAddTracks.Name = "tsmiAddTracks";
             this.tsmiAddTracks.Size = new System.Drawing.Size(257, 24);
             this.tsmiAddTracks.Text = "Додати треки";
+            // 
             // tsmiSearchTracks
+            // 
             this.tsmiSearchTracks.Name = "tsmiSearchTracks";
             this.tsmiSearchTracks.Size = new System.Drawing.Size(257, 24);
             this.tsmiSearchTracks.Text = "Пошук треків";
+            // 
             // tsmiRemoveTrack
+            // 
             this.tsmiRemoveTrack.Name = "tsmiRemoveTrack";
             this.tsmiRemoveTrack.Size = new System.Drawing.Size(257, 24);
             this.tsmiRemoveTrack.Text = "Видалити трек";
+            // 
             // tsmiDeletePlaylist
+            // 
             this.tsmiDeletePlaylist.Name = "tsmiDeletePlaylist";
             this.tsmiDeletePlaylist.Size = new System.Drawing.Size(257, 24);
             this.tsmiDeletePlaylist.Text = "Видалити плейлист";
+            // 
             // tsmiRenamePlaylist
+            // 
             this.tsmiRenamePlaylist.Name = "tsmiRenamePlaylist";
             this.tsmiRenamePlaylist.Size = new System.Drawing.Size(257, 24);
             this.tsmiRenamePlaylist.Text = "Перейменувати плейлист";
-
+            // 
             // listBoxPlaylistTracks
-            this.listBoxPlaylistTracks.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            // 
+            this.listBoxPlaylistTracks.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxPlaylistTracks.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBoxPlaylistTracks.FormattingEnabled = true;
@@ -304,8 +337,9 @@ namespace Player2
             this.listBoxPlaylistTracks.TabIndex = 3;
             this.listBoxPlaylistTracks.Visible = false;
             this.listBoxPlaylistTracks.SelectedIndexChanged += new System.EventHandler(this.listBoxPlaylistTracks_SelectedIndexChanged);
-
+            // 
             // buttonAddToPlaylist
+            // 
             this.buttonAddToPlaylist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAddToPlaylist.AutoSize = true;
             this.buttonAddToPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -315,10 +349,12 @@ namespace Player2
             this.buttonAddToPlaylist.Size = new System.Drawing.Size(30, 30);
             this.buttonAddToPlaylist.TabIndex = 4;
             this.buttonAddToPlaylist.Text = "+";
+            this.toolTip1.SetToolTip(this.buttonAddToPlaylist, "Додавання треків до плейлиста");
             this.buttonAddToPlaylist.Visible = false;
             this.buttonAddToPlaylist.Click += new System.EventHandler(this.buttonAddToPlaylist_Click);
-
+            // 
             // buttonAddFromLibrary
+            // 
             this.buttonAddFromLibrary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAddFromLibrary.AutoSize = true;
             this.buttonAddFromLibrary.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -328,24 +364,31 @@ namespace Player2
             this.buttonAddFromLibrary.Size = new System.Drawing.Size(30, 30);
             this.buttonAddFromLibrary.TabIndex = 5;
             this.buttonAddFromLibrary.Text = "+";
+            this.toolTip1.SetToolTip(this.buttonAddFromLibrary, "Додавання треків до плеєра");
             this.buttonAddFromLibrary.Visible = false;
             this.buttonAddFromLibrary.Click += new System.EventHandler(this.buttonAddFromLibrary_Click_1);
-
+            // 
             // splitContainer1
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            // 
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
+            // 
             // splitContainer1.Panel1
+            // 
             this.splitContainer1.Panel1.Controls.Add(this.panelPlaylist);
+            // 
             // splitContainer1.Panel2
+            // 
             this.splitContainer1.Panel2.Controls.Add(this.pictureBoxMusic);
             this.splitContainer1.Size = new System.Drawing.Size(982, 285);
             this.splitContainer1.SplitterDistance = 614;
             this.splitContainer1.TabIndex = 16;
-
+            // 
             // Form1
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(982, 453);
@@ -368,6 +411,7 @@ namespace Player2
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         private System.Windows.Forms.SplitContainer splitContainer1;
