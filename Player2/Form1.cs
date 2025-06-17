@@ -439,6 +439,11 @@ namespace Player2
 
         private void Form1_FormClosing(object s, FormClosingEventArgs e)
         { SaveLibrary(); SavePlaylists(); outputDevice?.Dispose(); audioFile?.Dispose(); }
+
+        private void flpPlaylists_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     // Класи-допоміжники

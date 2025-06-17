@@ -77,7 +77,7 @@ namespace Player2
             // buttonPlayPause
             // 
             this.buttonPlayPause.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonPlayPause.BackColor = System.Drawing.Color.Green;
+            this.buttonPlayPause.BackColor = System.Drawing.Color.White;
             this.buttonPlayPause.FlatAppearance.BorderSize = 0;
             this.buttonPlayPause.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonPlayPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
@@ -139,7 +139,7 @@ namespace Player2
             this.labelSongInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSongInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.labelSongInfo.Location = new System.Drawing.Point(172, 288);
+            this.labelSongInfo.Location = new System.Drawing.Point(172, 287);
             this.labelSongInfo.Name = "labelSongInfo";
             this.labelSongInfo.Size = new System.Drawing.Size(665, 20);
             this.labelSongInfo.TabIndex = 15;
@@ -178,12 +178,14 @@ namespace Player2
             // buttonRepeat
             // 
             this.buttonRepeat.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonRepeat.FlatAppearance.BorderSize = 0;
+            this.buttonRepeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRepeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.buttonRepeat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonRepeat.Location = new System.Drawing.Point(664, 75);
+            this.buttonRepeat.Location = new System.Drawing.Point(664, 69);
             this.buttonRepeat.Margin = new System.Windows.Forms.Padding(0);
             this.buttonRepeat.Name = "buttonRepeat";
-            this.buttonRepeat.Size = new System.Drawing.Size(30, 30);
+            this.buttonRepeat.Size = new System.Drawing.Size(50, 50);
             this.buttonRepeat.TabIndex = 17;
             this.buttonRepeat.Text = "🔁";
             this.toolTip1.SetToolTip(this.buttonRepeat, "Зациклити трек");
@@ -193,11 +195,13 @@ namespace Player2
             // buttonShuffle
             // 
             this.buttonShuffle.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonShuffle.FlatAppearance.BorderSize = 0;
+            this.buttonShuffle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonShuffle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.buttonShuffle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonShuffle.Location = new System.Drawing.Point(292, 75);
+            this.buttonShuffle.Location = new System.Drawing.Point(279, 69);
             this.buttonShuffle.Name = "buttonShuffle";
-            this.buttonShuffle.Size = new System.Drawing.Size(30, 30);
+            this.buttonShuffle.Size = new System.Drawing.Size(50, 50);
             this.buttonShuffle.TabIndex = 16;
             this.buttonShuffle.Text = "🔀";
             this.toolTip1.SetToolTip(this.buttonShuffle, "Перемішати треки");
@@ -222,7 +226,7 @@ namespace Player2
             this.pictureBoxMusic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxMusic.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxMusic.Name = "pictureBoxMusic";
-            this.pictureBoxMusic.Size = new System.Drawing.Size(364, 285);
+            this.pictureBoxMusic.Size = new System.Drawing.Size(497, 285);
             this.pictureBoxMusic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxMusic.TabIndex = 10;
             this.pictureBoxMusic.TabStop = false;
@@ -250,7 +254,7 @@ namespace Player2
             this.panelPlaylist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPlaylist.Location = new System.Drawing.Point(0, 0);
             this.panelPlaylist.Name = "panelPlaylist";
-            this.panelPlaylist.Size = new System.Drawing.Size(614, 285);
+            this.panelPlaylist.Size = new System.Drawing.Size(481, 285);
             this.panelPlaylist.TabIndex = 11;
             // 
             // flpPlaylists
@@ -260,9 +264,10 @@ namespace Player2
             this.flpPlaylists.AutoSize = true;
             this.flpPlaylists.Location = new System.Drawing.Point(0, 0);
             this.flpPlaylists.Name = "flpPlaylists";
-            this.flpPlaylists.Size = new System.Drawing.Size(580, 85);
+            this.flpPlaylists.Size = new System.Drawing.Size(447, 85);
             this.flpPlaylists.TabIndex = 6;
             this.toolTip1.SetToolTip(this.flpPlaylists, "Плейлисти");
+            this.flpPlaylists.Paint += new System.Windows.Forms.PaintEventHandler(this.flpPlaylists_Paint);
             // 
             // buttonEllipsis
             // 
@@ -270,7 +275,7 @@ namespace Player2
             this.buttonEllipsis.AutoSize = true;
             this.buttonEllipsis.ContextMenuStrip = this.cmsPlaylistMenu;
             this.buttonEllipsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.buttonEllipsis.Location = new System.Drawing.Point(582, 4);
+            this.buttonEllipsis.Location = new System.Drawing.Point(449, 4);
             this.buttonEllipsis.Name = "buttonEllipsis";
             this.buttonEllipsis.Size = new System.Drawing.Size(30, 30);
             this.buttonEllipsis.TabIndex = 1;
@@ -333,7 +338,7 @@ namespace Player2
             this.listBoxPlaylistTracks.Location = new System.Drawing.Point(29, 122);
             this.listBoxPlaylistTracks.Margin = new System.Windows.Forms.Padding(6);
             this.listBoxPlaylistTracks.Name = "listBoxPlaylistTracks";
-            this.listBoxPlaylistTracks.Size = new System.Drawing.Size(545, 160);
+            this.listBoxPlaylistTracks.Size = new System.Drawing.Size(412, 160);
             this.listBoxPlaylistTracks.TabIndex = 3;
             this.listBoxPlaylistTracks.Visible = false;
             this.listBoxPlaylistTracks.SelectedIndexChanged += new System.EventHandler(this.listBoxPlaylistTracks_SelectedIndexChanged);
@@ -344,7 +349,7 @@ namespace Player2
             this.buttonAddToPlaylist.AutoSize = true;
             this.buttonAddToPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonAddToPlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.buttonAddToPlaylist.Location = new System.Drawing.Point(580, 217);
+            this.buttonAddToPlaylist.Location = new System.Drawing.Point(447, 217);
             this.buttonAddToPlaylist.Name = "buttonAddToPlaylist";
             this.buttonAddToPlaylist.Size = new System.Drawing.Size(30, 30);
             this.buttonAddToPlaylist.TabIndex = 4;
@@ -359,7 +364,7 @@ namespace Player2
             this.buttonAddFromLibrary.AutoSize = true;
             this.buttonAddFromLibrary.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonAddFromLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.buttonAddFromLibrary.Location = new System.Drawing.Point(580, 251);
+            this.buttonAddFromLibrary.Location = new System.Drawing.Point(447, 251);
             this.buttonAddFromLibrary.Name = "buttonAddFromLibrary";
             this.buttonAddFromLibrary.Size = new System.Drawing.Size(30, 30);
             this.buttonAddFromLibrary.TabIndex = 5;
@@ -384,7 +389,7 @@ namespace Player2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.pictureBoxMusic);
             this.splitContainer1.Size = new System.Drawing.Size(982, 285);
-            this.splitContainer1.SplitterDistance = 614;
+            this.splitContainer1.SplitterDistance = 481;
             this.splitContainer1.TabIndex = 16;
             // 
             // Form1
